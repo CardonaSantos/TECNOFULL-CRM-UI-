@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import { useParams } from "react-router-dom";
-import logoCrm from "../../assets/logoNovaSinFondo.png";
+import logoCrm from "../../assets/tecnofull.png";
 import dayjs from "dayjs";
 import "dayjs/locale/es";
 import utc from "dayjs/plugin/utc";
@@ -132,7 +132,7 @@ export default function CrmPdfPago() {
           {/* Header */}
           <div className="flex justify-between items-start border-b border-gray-300 p-5 rounded-t-lg">
             <div className="flex items-center">
-              <div className="w-28 h-28  border-gray-200  overflow-hidden mr-4">
+              <div className="w-28 h-20  border-gray-200  overflow-hidden mr-4">
                 <img
                   src={logoCrm || "/placeholder.svg"}
                   alt="Logo"

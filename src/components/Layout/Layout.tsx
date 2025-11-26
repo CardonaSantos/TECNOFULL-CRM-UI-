@@ -5,7 +5,7 @@ import { User, LogOut, AtSign } from "lucide-react";
 
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { ModeToggle } from "../mode-toggle";
-import logo from "@/assets/LogoCrmPng.png";
+import logo from "@/assets/tecnofull.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -207,7 +207,7 @@ export default function Layout2({ children }: LayoutProps) {
                   <img
                     src={logo}
                     alt="Logo"
-                    className="h-10 w-10 sm:h-12 sm:w-12"
+                    className="h-10 w-10 sm:h-9 sm:w-16"
                   />
                 </Link>
                 <p className="text-xs sm:text-sm truncate max-w-[160px] sm:max-w-xs">
@@ -221,14 +221,12 @@ export default function Layout2({ children }: LayoutProps) {
 
                 {/* Botón para cambiar entre CRM / POS */}
                 <Button
-                  asChild
+                  disabled={true}
                   size="sm"
                   variant="outline"
                   className="hidden sm:inline-flex"
                 >
-                  <Link to={isCrmLocation ? "/" : "/crm"}>
-                    {isCrmLocation ? "Ir a POS" : "Ir a CRM"}
-                  </Link>
+                  Ir a POS
                 </Button>
 
                 <NotificationsSheet
