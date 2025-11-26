@@ -822,18 +822,18 @@ function App() {
             <Route
               path="/crm/olt"
               element={
-                <ProtectRouteAdmin>
+                <ProtectRouteCrmUser>
                   <OltMainPage />
-                </ProtectRouteAdmin>
+                </ProtectRouteCrmUser>
               }
             />
 
             <Route
               path="/crm/routers"
               element={
-                <ProtectRouteAdmin>
+                <ProtectRouteCrmUser>
                   <RouterMainPage />
-                </ProtectRouteAdmin>
+                </ProtectRouteCrmUser>
               }
             />
 
