@@ -261,6 +261,7 @@ export const routesCrm_Admin = [
 
   { icon: User, label: "Perfil", href: "/crm/perfil" },
   { icon: Users, label: "Usuarios", href: "/crm/usuarios" },
+  { icon: Building, label: "Empresa", href: "/crm/empresa" },
 ];
 
 export const routesCrm_Oficina = [
